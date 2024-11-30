@@ -501,6 +501,18 @@ async def profile(update: Update, context: CallbackContext) -> None:
         reply_markup=reply_markup
     )
 
+
+
+PORT = int(os.environ.get("PORT", 8000))
+
+application.run_webhook(
+    listen="0.0.0.0",
+    port=PORT,
+    url_path="",
+    webhook_url=f"https://relevant-shoshana-gymmasterbot-8ad68c6e.koyeb.app/"
+)
+
+
 # Define the challenge command handler
 async def challenge(update: Update, context: CallbackContext) -> None:
     # Check if the user provided both the gym name and the username
