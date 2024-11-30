@@ -528,7 +528,7 @@ async def challenge(update: Update, context: CallbackContext) -> None:
 
 
 def main() -> None:
-    application = Application.builder().token("7636503804:AAGbPpuBojRCOrfPHn3Gs3x1q6zy7pe8gAE").build()
+    application = Application.builder().token("7636503804:AAEzHsrE6XtrlY6efjglfmokQTyP_LpLkyA").build()
 
     # Register handlers
     application.add_handler(CommandHandler("start", start))
