@@ -503,15 +503,6 @@ async def profile(update: Update, context: CallbackContext) -> None:
 
 
 
-PORT = int(os.environ.get("PORT", 8000))
-
-application.run_webhook(
-    listen="0.0.0.0",
-    port=PORT,
-    url_path="",
-    webhook_url=f"https://relevant-shoshana-gymmasterbot-8ad68c6e.koyeb.app/"
-)
-
 
 # Define the challenge command handler
 async def challenge(update: Update, context: CallbackContext) -> None:
