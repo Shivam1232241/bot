@@ -18,4 +18,4 @@ WORKDIR /MissperfectURL
 
 COPY start.sh /start.sh
 
-CMD ["python3","bot.py"]
+CMD ["python","bot.py"]
