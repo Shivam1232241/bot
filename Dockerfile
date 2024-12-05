@@ -1,9 +1,5 @@
 FROM python:latest
 
-RUN apt update && apt upgrade -y
-
-RUN apt install git curl python-pip
-
 RUN pip install -U pip
 
 COPY requirements.txt /requirements.txt
