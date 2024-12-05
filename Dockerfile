@@ -12,9 +12,9 @@ RUN cd /
 
 RUN pip3 install  -U -r requirements.txt
 
-RUN mkdir /MissperfectURL
+RUN mkdir /bot
 
-WORKDIR /MissperfectURL
+WORKDIR /bot
 
 COPY start.sh /start.sh
 
